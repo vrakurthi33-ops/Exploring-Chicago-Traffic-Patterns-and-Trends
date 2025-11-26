@@ -1,0 +1,229 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPS-BoldMT;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 TimesNewRomanPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
+Exploring Chicago Traffic Patterns and Trends
+\f1\b0\fs32 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 \'a0
+\f1\b0 \
+\pard\pardeftab720\fi960\qj\partightenfactor0
+
+\f2 \cf2 This project analyzes traffic patterns, seasonal trends, and directional flow differences across the city of Chicago. Using AWS services, SQL, R, and Python, the study uncovers insights that can support urban planning and infrastructure optimization.
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Overview
+\f1\b0 \
+\pard\pardeftab720\fi960\qj\partightenfactor0
+
+\f2 \cf2 Urban traffic congestion continues to impact productivity, pollution, and city infrastructure needs. This project examines Chicago\'92s public traffic dataset to understand seasonal variation, identify high-traffic streets, and find locations where directional traffic flow differs significantly. The analysis includes data cleaning, statistical exploration, and visualizations.
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Research Questions
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 1.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Does traffic vary significantly across seasons?
+\f1 \
+
+\f2 2.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Which streets consistently experience high traffic volume?
+\f1 \
+
+\f2 3.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Can we identify locations with significant directional traffic flow differences?
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Dataset
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 The dataset is sourced from the City of Chicago and includes:
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Traffic volume count location
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Street name
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Date of count
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Total passing vehicle volume
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Directional traffic volume
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Latitude and longitude
+\f1 \
+
+\f2 It contains nominal, ordinal, interval, and ratio data types, enabling a detailed analysis.
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Architecture and Tools
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 Data Cleaning
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 AWS Glue DataBrew
+\f1 \
+
+\f2 Data Exploration and Analysis
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 AWS RDS (MySQL)
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 RStudio (R programming)
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Python (Spyder)
+\f1 \
+
+\f2 Visualization
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Leaflet in R
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 R and Python plotting libraries
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Methodology
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 1.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Initial cleaning in AWS DataBrew by removing rows with missing values
+\f1 \
+
+\f2 2.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 SQL queries and R-based exploratory analysis
+\f1 \
+
+\f2 3.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Extraction of months and mapping to seasons
+\f1 \
+
+\f2 4.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Grouping and evaluation of high-traffic streets
+\f1 \
+
+\f2 5.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Python-based secondary cleaning for directional data
+\f1 \
+
+\f2 6.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Creation of maps and visualizations for all research questions
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Results
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 Seasonal Variation
+\f1 \
+\pard\pardeftab720\fi960\qj\partightenfactor0
+
+\f2 \cf2 Traffic volume is highest in fall and lowest in winter, indicating strong seasonal shifts.
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 High-Traffic Streets
+\f1 \
+\pard\pardeftab720\fi960\qj\partightenfactor0
+
+\f2 \cf2 Using a threshold of 50,000 vehicles, five streets were identified as high-volume locations. Lake Shore Drive showed the highest overall traffic.
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 Directional Traffic Differences
+\f1 \
+\pard\pardeftab720\fi960\qj\partightenfactor0
+
+\f2 \cf2 After cleaning directional variables, significant imbalances were found at specific locations, including 7139 South.
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f0\b \cf2 Discussion
+\f1\b0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f2 \cf2 The study demonstrates clear seasonal traffic variation, highlights high-traffic corridors, and identifies directional flow issues. The use of multiple tools strengthens analysis reliability and provides actionable insights for urban planning and traffic management.
+\f1 \
+
+\f2 \'a0
+\f1 \
+
+\f2 Limitations
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 No time-of-day data for hourly comparisons
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 No weather information to correlate traffic behavior
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 One-way traffic entries limit directional analysis scope
+\f1 \
+
+\f2 \'a0
+\f1 \
+
+\f2 Future Work
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Integration of real-time traffic data
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Machine learning models for traffic prediction
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Incorporating weather data
+\f1 \
+
+\f2 \'95\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Time-based traffic trend analysis
+\f1 \
+
+\f2 \'a0
+\f1 \
+}
